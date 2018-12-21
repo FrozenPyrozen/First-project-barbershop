@@ -3,20 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Borodinsky</title>
+  <title>Барбершоп "Бородинский"</title>
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a href="#" class="main-header-logo">
+        <!-- TODO: set logo -->
         <img src="img/#" alt="Website logo">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Прайс-лист</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Прайс-лист</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
@@ -67,6 +68,7 @@
     <section class="gallery">
       <h2>Фотогалерея</h2>
       <figure class="gallery-content">
+        <!-- TODO: set Pictures -->
         <a href="#"><img src="#" alt="Фото барбершопа"></a>
       </figure>
       <!-- TODO: Add buttons -->
@@ -88,7 +90,7 @@
       <h2>Записатся</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
       <!-- TODO: Add form -->
-      <button type="submit" name="button-submit-form"></button>
+      <button type="submit" name="button-submit-form">Отправить</button>
     </section>
   </main>
   <footer class="main-footer">
@@ -98,7 +100,7 @@
       <a href="#" class="map-info">Как нас найти?</a><br>
       Телефон: +7 (812) 666-02-66</p>
     <div class="social-media-container">
-      <p>Давайте дружить!</p>
+      <p><b>Давайте дружить!</b></p>
       <ul class="social-media-list">
         <li class="social-media-vk"><a href="vk.com">Vk</a></li>
         <li class="social-media-fb"><a href="facebook.com">Facebook</a></li>
@@ -106,11 +108,20 @@
       </ul>
     </div>
     <p class="copyright">
-      Разработано
+      <b>Разработано</b>
       <a href="#">HTML-ACADEMY</a>
     </p>
   </footer>
   <!-- TODO: Add modal windows -->
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <span class="modal-close">x</span>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visualy-hidden">Как до на добратся?</h2>
+    <span class="modal-close">x</span>
+  </section>
 </body>
 
 </html>
