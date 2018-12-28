@@ -10,8 +10,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
-        <!-- TODO: Change logo for catalog page -->
-        <img src="img/#" alt="Website logo">
+        <img src="img/header-logo.svg" alt="Website logo">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
@@ -38,14 +37,13 @@
     </ul>
     <section class="product-photos">
       <h2 class="visualy-hidden">Изображения товара</h2>
-      <p class="product-photo-full"><img src="#" alt="Фото всего набора"></p>
+      <p class="product-photo-full"><img src="img/catalog-item-big-prew.jpg" alt="Фото всего набора"></p>
       <ul>
-        <li><img src="#" alt="Фото в анфас"></li>
-        <li><img src="#" alt="Фото в профиль"></li>
-        <li><img src="#" alt="Фото отдельной части"></li>
+        <li><img src="img/catalog-item-2.jpg" alt="Фото в анфас"></li>
+        <li><img src="img/catalog-item-3.jpg" alt="Фото в профиль"></li>
+        <li><img src="img/catalog-item-4.jpg" alt="Фото отдельной части"></li>
       </ul>
     </section>
-
     <section class="product-info">
       <h2 class="visualy-hidden">Описание товара</h2>
       <p class="product-avability">Есть в наличии</p>
@@ -68,11 +66,14 @@
 
   </main>
   <footer class="main-footer">
-    <p class="footer-contact-info">
-      Барбершоп «Бородинский»<br>
-      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="#" class="map-info">Как нас найти?</a><br>
-      Телефон: +7 (812) 666-02-66</p>
+    <address class="footer-contact-info">
+      <p>
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#" class="map-info">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+    </address>
     <div class="social-media-container">
       <p>Давайте дружить!</p>
       <ul class="social-media-list">
@@ -86,10 +87,27 @@
       <a href="#">HTML-ACADEMY</a>
     </p>
   </footer>
+
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
-    <span class="modal-close">x</span>
+    <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
+      <p>
+        <label for="login-user" class="visualy-hidden">Логин</label>
+        <input type="text" id="login-user" class="login-icon-user" placeholder="Логин">
+      </p>
+      <p>
+        <label for="login-password" class="visualy-hidden">Пароль</label>
+        <input type="password" id="login-password" class="login-icon-password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <input type="checkbox" id="password-remember" name="remember" value="" class="visualy-hidden">
+        <label for="password-remember" class="login-checkbox">Запомните меня</label>
+        <a class="restore" href="#">Я забыл пароль</a>
+      </p>
+      <button type="submit" class="button" name="button">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
 </body>
